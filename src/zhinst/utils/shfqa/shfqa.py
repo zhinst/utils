@@ -119,7 +119,7 @@ def get_scope_settings(
     settings = [
         (scope_path + "segments/count", num_segments),
         (scope_path + "segments/enable", 1 if num_segments > 1 else 0),
-        (scope_path + "averaging/enable", 1 if num_segments > 1 else 0),
+        (scope_path + "averaging/enable", 1 if num_averages > 1 else 0),
         (scope_path + "averaging/count", num_averages),
         (scope_path + "channels/*/enable", 0),
     ]
