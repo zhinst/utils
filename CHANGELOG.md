@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 0.4.1
+
+* Fix bug in `configure_scope` which used the `num_segments` to determine if the 
+ averaging should be enabled rather than the `num_averages`.
+
 ## Version 0.4.0
 
 * Add optional `integration_length` argument to the `configure_weighted_integration` function of the SHFQA / SHFQC. If the argument is set to `None` (default value), the integration length is determined by the length of the first integration weights vector, which is the same behavior as in the previous versions to ensure backwards-compatibility.
